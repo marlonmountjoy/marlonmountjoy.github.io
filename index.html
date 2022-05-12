@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="bookshelf.css" />
+  </head>
+  <body onload="identity()">
+    <div class="bookshelf"></div>
+      <div id="addBook">
+        <form id="frmInput" name="input">
+        <label id="lblCover" name="cover" for="Cover">Cover:</label><br>
+        <input type="url" id="txtCover" name="cover" required="true" onfocus = 'this.value = ""'><br>
+        <label id="lblTitle" for="Title">Title: </label><br>
+        <input type="text" id="txtTitle" name="title" maxlength="100" onfocus = 'this.value = ""'><br>
+        <label id="lblAuthor" for="Author">Author: </label><br>
+        <input type="text" id="txtAuthor" name="author" maxlength="2" onfocus = 'this.value = ""'><br>
+        <button id="btnAdd" onclick="return add()">Add</button>
+        </form>
+      </div>
+  </body>
+  <script src="bookshelf.js"></script>
+</html>
